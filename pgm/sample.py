@@ -1,3 +1,4 @@
+from datetime import datetime, date
 import pandas as pd
 import sys
 
@@ -33,3 +34,7 @@ path = CONST + 'aaaaa{ymd}.csv'.format(ymd=ymd)
 pdf.to_csv(path)
 
 pdf.to_csv('aaaaa{ymd}.csv'.format(ymd=ymdymd))
+
+pdf.to_csv('aaaaa.csv' + date(2022, 10, 1).strftime('%Y%m%d'))
+
+'a/a/a'.split('/')
